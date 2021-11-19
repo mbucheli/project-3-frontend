@@ -1,12 +1,12 @@
 import React from "react"
 import NavBar from "./components/NavBar";
-import Form from "./components/Form";
+import Main from "./components/Main";
 
 function App() {
   return (
     <div className="App">
      <NavBar />
-     <Form />
+     <Main />
     </div>
   );
 }

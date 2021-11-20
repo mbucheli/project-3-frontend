@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Routes, Route } from 'react-router-dom';
 import Index from "../pages/Index"
+import Show from "../pages/Show";
 
 
 function Main() {
@@ -38,6 +39,7 @@ function Main() {
         <div>
             <Routes>
                 <Route exact path="/" element={<Index prescription={prescription} createPrescription={createPrescription}/>}/>
+                <Route path="/:id" element={<Show prescription={prescription} deletePrescription={deletePrescription}/>}/>
             </Routes>
         </div>
     )

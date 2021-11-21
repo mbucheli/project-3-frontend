@@ -21,7 +21,7 @@ function Show(props) {
                         <p>{medicine.details}</p>
                     </div>
                     <div className="card-action">
-                        <a href="#" style={{ fontSize: "20px" }}>Dosage: {medicine.quantity}</a>
+                        <a href="#" style={{ fontSize: "20px" }}>Quantity: {medicine.quantity}</a>
                         <a href="#" onClick={deleteMedicine} className="right align"><i className="material-icons prefix">delete_forever</i></a>
                     </div>
                 </div>

@@ -20,7 +20,7 @@ function NavBar() {
                             </button>
                         </li>
                         {openModal && <ModalTimer closeModal={setOpenModal} />}
-                        {/* Modal calendar is going to start here */}
+                        {/* ModalCalendar is going to start here */}
                         <li className="tab"><a className="active" href="#test2">Calendar</a></li>
                     </ul>
 

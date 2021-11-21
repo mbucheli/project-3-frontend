@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import Timer from "./Timer";
 
 function ModalTimer({ closeModal }) {
     return (
@@ -11,10 +12,10 @@ function ModalTimer({ closeModal }) {
                     </button>
                 </div>
                 <div>
-                    <h4 className="title" style={{color: "black"}}>This is the Timer</h4>
+                    <h4 className="title" style={{color: "black"}}><i className="material-icons prefix" style={{ fontSize: "60px"}}>add_alarm</i></h4>
                 </div>
                 <div className="body">
-                    <p style={{color: "black"}}>The is the Timer</p>
+                    <p style={{color: "black"}}><Timer /></p>
                 </div>
             </div>
         </div>

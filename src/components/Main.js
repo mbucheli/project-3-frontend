@@ -26,6 +26,17 @@ function Main() {
         getPrescription();
     };
 
+    const updateQuantity = async (medicine, id) => {
+        await fetch(URL + id, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "Application/json",
+            },
+            body: JSON.stringify(medicine),
+        });
+        getPrescription();
+    };
+
     const deletePrescription = async id => {
         await fetch(URL + id, {
             method: "DELETE",
@@ -39,7 +50,7 @@ function Main() {
         <div>
             <Routes>
                 <Route exact path="/" element={<Index prescription={prescription} createPrescription={createPrescription}/>}/>
-                <Route path="/:id" element={<Show prescription={prescription} deletePrescription={deletePrescription}/>}/>
+                <Route path="/:id" element={<Show prescription={prescription} deletePrescription={deletePrescription} updateQuantity={updateQuantity}/>}/>
             </Routes>
         </div>
     )

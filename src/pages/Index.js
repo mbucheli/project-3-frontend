@@ -52,7 +52,7 @@ function Index(props) {
                         <div className="input-field col s6">
                             <i className="material-icons prefix">local_pharmacy</i>
                             <input id="icon_title" type="text" className="validate" value={form.medicine} name="medicine" onChange={handleChange} />
-                            <label for="icon_title">Medication</label>
+                            <label for="icon_title">Medicine</label>
                         </div>
                         <div className="input-field col s6">
                             <i className="material-icons prefix">description</i>
@@ -65,7 +65,7 @@ function Index(props) {
                             <label for="icon_mode_edit">Quantity</label>
                         </div>
                     </div>
-                    <div className="row right-align" style={{ marginTop: "-80px", marginRight: "25px"}}>
+                    <div className="row right-align" style={{ marginTop: "-80px", marginRight: "20px"}}>
                         <button className="btn-floating btn-medium waves-effect waves-light teal" type="submit" name="action"><i class="material-icons right">add_to_photos</i></button>
                     </div>
                 </form>

@@ -39,17 +39,9 @@ function Index(props) {
     };
 
     const loading = () => {
-        <div class="preloader-wrapper small active">
-    <div class="spinner-layer spinner-green-only">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div><div class="gap-patch">
-        <div class="circle"></div>
-      </div><div class="circle-clipper right">
-        <div class="circle"></div>
-      </div>
-    </div>
-  </div>
+        <div>
+            <h3>Loading...</h3>
+        </div>
     };
 
     return (
@@ -73,8 +65,8 @@ function Index(props) {
                             <label for="icon_mode_edit">Quantity</label>
                         </div>
                     </div>
-                    <div className="row right-align">
-                        <button className="btn waves-effect waves-light btn-small" style={{ backgroundColor: "teal"}} type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+                    <div className="row right-align" style={{ marginTop: "-80px", marginRight: "25px"}}>
+                        <button className="btn-floating btn-medium waves-effect waves-light teal" type="submit" name="action"><i class="material-icons right">add_to_photos</i></button>
                     </div>
                 </form>
                 {props.prescription ? loaded() : loading()}

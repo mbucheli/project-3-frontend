@@ -31,25 +31,22 @@ function Show(props) {
             <div className="col s12 m6">
                 <div className="card blue-grey darken-1">
                     <div className="card-content white-text">
-                        <div style={{ paddingBottom: "10px" }}>{moment(medicine.date).format('MM/DD/YYYY')}</div>
+                        <div style={{ marginTop: "-10px", paddingBottom: "20px", textAlign: "right" }}>{moment(medicine.date).format('MM/DD/YYYY')}</div>
                         <span className="card-title">{medicine.medicine}</span>
                         <p>{medicine.details}</p>
                         <p style={{ fontSize: "15px" }}>Quantity: {medicine.quantity}</p>
-                        </div>
-                    <div className="card-action">
-                        <a href="#" onClick={deleteMedicine} className="right align"><i className="material-icons prefix">delete_forever</i></a>
                     </div>
-                    <div className="input-field col s6">
-                    {/* <i className="material-icons prefix">mode_edit</i> */}
-                    <form handleSubmit={handleSubmit}>
-                    <input id="icon_mode_edit" type="number" className="validate" value={editQuantity.quantity} name="quantity" onChange={handleChange} />
-                    <input id="inputBtn" type="submit" value="Update Info" />
-                    </form>
+                    <div className="card-action" style={{ height: "80px"}}>
+                        <div className="input-field col s6" style={{color: "white"}}>
+                            <i className="material-icons prefix" style={{ marginLeft: "-30px"}}>mode_edit</i>
+                            <form handleSubmit={handleSubmit} style={{marginTop: "-30px"}}>
+                                <input id="icon_mode_edit" style={{color: "white"}} type="number" className="validate" value={editQuantity.quantity} name="quantity" onChange={handleChange} />
+                                <button style={{ border: "none" }}><input id="inputBtn" style={{ border: "none" }} type="submit" /></button>
+                            </form>
+                        </div>
+                        <a href="#" onClick={deleteMedicine} className="right align" style={{ marginRight: "0px"}}><i className="material-icons prefix">delete_forever</i></a>
+                    </div>
                 </div>
-                </div>
-            </div>
-            <div>
-                
             </div>
         </div>
     )

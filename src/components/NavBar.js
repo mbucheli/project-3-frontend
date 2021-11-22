@@ -1,6 +1,7 @@
 import React from "react";
 import ModalTimer from "./ModalTimer";
 import { useState } from "react"
+import Calendar from "./Calendar";
 
 function NavBar() {
     const [openModal, setOpenModal] = useState(false)
@@ -18,10 +19,14 @@ function NavBar() {
                             <button className="openModalbtn" style={{ border: "none", background: "transparent" }} onClick={() => { setOpenModal(true) }}>
                                 <i className="material-icons prefix">add_alarm</i>
                             </button>
+                            {openModal && <ModalTimer closeModal={setOpenModal} />}
                         </li>
-                        {openModal && <ModalTimer closeModal={setOpenModal} />}
-                        {/* ModalCalendar is going to start here */}
-                        <li className="tab"><a className="active" href="#test2">Calendar</a></li>
+                        <li className="tab">
+                            <a className="active" href="https://www.biometadata.com/" target="_blank" className="black-text"><i className="material-icons prefix">info</i></a>
+                        </li>
+                        <li className="tab">
+                            
+                        </li>
                     </ul>
 
                 </div>

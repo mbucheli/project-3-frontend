@@ -29,7 +29,7 @@ function Index(props) {
                 <li key={medicine._id} className="collection-item" style={{ listStyle: "none" }}>
                     <div className="z-depth-5" style={{ paddingLeft: "10px", paddingRight: "5px", paddingTop: "5px", marginBottom: "30px"}}>
                         <h5>{medicine.medicine}</h5>
-                        <Link to={`/${medicine._id}`} className="secondary-content"><i className="material-icons prefix">add_circle</i></Link>
+                        <Link to={`/${medicine._id}`} className="secondary-content" style={{ color: "teal"}}><i className="material-icons prefix">add_circle</i></Link>
                         <p>{medicine.details}</p>
                         <div style={{ paddingBottom: "10px" }}>{moment(medicine.date).format('MM/DD/YYYY')}</div>
                     </div>
@@ -74,7 +74,7 @@ function Index(props) {
                         </div>
                     </div>
                     <div className="row right-align">
-                        <button className="btn waves-effect waves-light btn-small" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+                        <button className="btn waves-effect waves-light btn-small" style={{ backgroundColor: "teal"}} type="submit" name="action">Submit<i class="material-icons right">send</i></button>
                     </div>
                 </form>
                 {props.prescription ? loaded() : loading()}

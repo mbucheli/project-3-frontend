@@ -27,14 +27,14 @@ const Timer = () => {
 
   return (
     <div className="app" style={{ fontFamily: "Cambria" }}>
-      <div className="time" style={{ marginBottom: "15px" }}>
-        {seconds}s
+      <div className="time" style={{ marginBottom: "15px", marginTop: "-15px",fontFamily: "Montserrat" }}>
+        {seconds}<p style={{ fontSize: "10px", marginTop: "-25px" }}>secs</p>
       </div>
       <div className="row">
-        <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`} onClick={toggle}>
+        <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`} onClick={toggle} className="waves-effect waves-light btn" style={{ marginRight: "5px", fontFamily: "Montserrat", backgroundColor: "black"}}>
           {isActive ? 'Pause' : 'Start'}
         </button>
-        <button className="button" onClick={reset}>
+        <button className="button" className="waves-effect waves-light btn" onClick={reset} style={{ marginLeft: "5px", fontFamily: "Montserrat", backgroundColor: "black"}}>
           Reset
         </button>
       </div>

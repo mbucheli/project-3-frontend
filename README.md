@@ -5,7 +5,7 @@ so that I may keep track of my dosages.
 
 ## Screenshots
 ![Main Page mobile view](https://i.imgur.com/rQ3M6Ka.png)
-![Show Page mobile view](https://i.imgur.com/qPHbSEC.png)
+![Main Page desktop view](https://i.imgur.com/uDpmPDc.png)
 
 ## Technology Used
 * Node.js

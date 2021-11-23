@@ -18,13 +18,13 @@ function NavBar() {
                 <div className="nav-content" style={{ fontFamily: "Cambria" }}>
                     <ul className="tabs tabs-transparent">
                         <li className="tab">
-                            <button className="openModalbtn" style={{ border: "none", background: "transparent" }} onClick={() => { setOpenModalTimer(true) }}>
+                            <button className="openModalbtn" style={{ border: "none", background: "transparent", color: "black" }} onClick={() => { setOpenModalTimer(true) }}>
                                 <i className="material-icons prefix">add_alarm</i>
                             </button>
                             {openModalTimer && <ModalTimer closeModalTimer={setOpenModalTimer} />}
                         </li>
                         <li className="tab">
-                            <button className="openModalbtn" style={{ border: "none", background: "transparent", marginLeft: "5px", marginRight: "-5px" }} onClick={() => { setOpenModalCalendar(true) }}>
+                            <button className="openModalbtn" style={{ border: "none", background: "transparent", marginLeft: "5px", marginRight: "-5px", color: "black" }} onClick={() => { setOpenModalCalendar(true) }}>
                                 <i className="material-icons prefix">date_range</i>
                             </button>
                             {openModalCalendar && <ModalCalendar closeModalCalendar={setOpenModalCalendar} />}

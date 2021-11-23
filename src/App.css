@@ -2,4 +2,8 @@
   .nav-content {
     margin-left: 15px;
   }
+
+  .card-action{
+      margin-bottom: 20px;
+  }
 }

@@ -14,6 +14,7 @@ so that I may keep track of my dosages.
 * React
 * React Materialize
 * Moment.js
+* Syncfusion React Calendar
 * HTML
 * CSS3
 * Google Fonts

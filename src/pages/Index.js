@@ -19,7 +19,7 @@ function Index(props) {
         setForm({
             medicine: "",
             details: "",
-            quantity: Number,
+            quantity: Number
         });
     };
 
@@ -66,7 +66,7 @@ function Index(props) {
                         </div>
                     </div>
                     <div className="row right-align" style={{ marginTop: "-80px", marginRight: "20px"}}>
-                        <button className="btn-floating btn-medium waves-effect waves-light teal" type="submit" name="action"><i class="material-icons right">add_to_photos</i></button>
+                        <button className="btn-floating btn-medium waves-effect waves-light teal" type="submit" name="action"><i className="material-icons right">add_to_photos</i></button>
                     </div>
                 </form>
                 {props.prescription ? loaded() : loading()}

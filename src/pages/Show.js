@@ -6,7 +6,9 @@ function Show(props) {
     const navigate = useNavigate();
     const params = useParams();
     const id = params.id;
+    
     const prescription = props.prescription
+    console.log(prescription);
     const medicine = prescription.find(m => m._id === id)
 
     const [editQuantity, setEditQuantity] = useState(medicine);
@@ -17,7 +19,7 @@ function Show(props) {
 
     const handleSubmit = event => {
         event.preventDefault();
-        props.updateQuantity(editQuantity, medicine._id);
+        props.updateQuantity(editQuantity, medicine._id) ;
         navigate("/");
     };
 
@@ -38,10 +40,20 @@ function Show(props) {
                     </div>
                     <div className="card-action" style={{ height: "80px"}}>
                         <div className="input-field col s6" style={{color: "white"}}>
-                            <i className="material-icons prefix" style={{ marginLeft: "-30px"}}>mode_edit</i>
-                            <form handleSubmit={handleSubmit} style={{marginTop: "-30px"}}>
-                                <input id="icon_mode_edit" style={{color: "white"}} type="number" className="validate" value={editQuantity.quantity} name="quantity" onChange={handleChange} />
-                                <button style={{ border: "none" }}><input id="inputBtn" style={{ border: "none" }} type="submit" /></button>
+                            <i className="material-icons prefix" style={{ marginLeft: "-30px", marginTop: "-25px"}}>mode_edit</i>
+                            <form onSubmit={handleSubmit} style={{marginTop: "-30px"}}>
+                                <input 
+                                id="icon_mode_edit" 
+                                style={{color: "white", fontFamily: "Cambria", fontSize: "20px"}} 
+                                type="number" 
+                                className="validate" 
+                                value={editQuantity.quantity} 
+                                name="quantity" 
+                                onChange={handleChange} />
+                                <button 
+                                style={{ border: "none", backgroundColor: "teal", boxShadow: "3px 3px rgba(0, 0, 0, .2)", fontFamily: "Cambria" }} 
+                                type="submit">Update
+                                </button>
                             </form>
                         </div>
                         <a href="#" onClick={deleteMedicine} className="right align" style={{ marginRight: "0px"}}><i className="material-icons prefix">delete_forever</i></a>

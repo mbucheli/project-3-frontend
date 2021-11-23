@@ -24,7 +24,7 @@ function NavBar() {
                             {openModalTimer && <ModalTimer closeModalTimer={setOpenModalTimer} />}
                         </li>
                         <li className="tab">
-                            <button className="openModalbtn" style={{ border: "none", background: "transparent" }} onClick={() => { setOpenModalCalendar(true) }}>
+                            <button className="openModalbtn" style={{ border: "none", background: "transparent", marginLeft: "5px", marginRight: "-5px" }} onClick={() => { setOpenModalCalendar(true) }}>
                                 <i className="material-icons prefix">date_range</i>
                             </button>
                             {openModalCalendar && <ModalCalendar closeModalCalendar={setOpenModalCalendar} />}

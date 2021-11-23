@@ -28,7 +28,7 @@ function Index(props) {
             <div className="collection" className="col s12 m2" style={{ fontFamily: "Cambria"}}>
                 <li key={medicine._id} className="collection-item" style={{ listStyle: "none" }}>
                     <div className="z-depth-5" style={{ paddingLeft: "10px", paddingRight: "5px", paddingTop: "5px", marginBottom: "30px"}}>
-                        <h5>{medicine.medicine}</h5>
+                        <h6 style={{ fontSize: "20px", fontWeight: "bold" }}>{medicine.medicine}</h6>
                         <Link to={`/${medicine._id}`} className="secondary-content" style={{ color: "teal"}}><i className="material-icons prefix">add_circle</i></Link>
                         <p>{medicine.details}</p>
                         <div style={{ paddingBottom: "10px" }}>{moment(medicine.date).format('MM/DD/YYYY')}</div>

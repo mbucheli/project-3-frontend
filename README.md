@@ -1,8 +1,7 @@
 # Nurse Mern
-Happy Tail is a full CRUD application built with MERN. As a user Happy Tail let's you store, add, update, and 
-delete clients/pets. AAU I should be to add information 
-like, a pet name, image link, service, schedule, client's 
-name, and pet's needs for each client/pet.
+Nurse Mern is a full CRUD application built with MERN. 
+As a user I want Nurse Mern to manage my medication/s, 
+so that I may keep track of my dosages.
 
 ## Screenshots
 ![Main Page mobile view](https://i.imgur.com/rQ3M6Ka.png)
@@ -21,9 +20,9 @@ name, and pet's needs for each client/pet.
 
 
 ## Getting Started
-Deploy Nurse Mern [link](https://goofy-goldwasser-3e86bc.netlify.app/)
+Deploy Nurse Mern [link](https://jolly-jackson-b9afe1.netlify.app/)
 
 ## Future Enhancements
 * User authentication
-* Add decrement button for quantity
+* Add Tablet view
 * Add events to calendar

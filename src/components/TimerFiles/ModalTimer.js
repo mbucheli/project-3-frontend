@@ -7,8 +7,8 @@ function ModalTimer({ closeModalTimer }) {
         <div className="modalBackground">
             <div className="modalContainer">
                 <div className="titleCloseBtn">
-                    <button className="red-text" onClick={() => { closeModalTimer(false) }}>
-                        <i className="material-icons prefix">cancel</i>
+                    <button className="red-text" style={{ backgroundColor: "white"}} onClick={() => { closeModalTimer(false) }}>
+                        <i className="material-icons prefix" style={{ backgroundColor: "white"}}>cancel</i>
                     </button>
                 </div>
                 <div>

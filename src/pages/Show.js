@@ -41,6 +41,7 @@ function Show(props) {
                     <div className="card-action" style={{ height: "80px"}}>
                         <div className="input-field col s6" style={{color: "white"}}>
                             <i className="material-icons prefix" style={{ marginLeft: "-30px", marginTop: "-25px"}}>mode_edit</i>
+                            {/* stupid onSubmit syntax error */}
                             <form onSubmit={handleSubmit} style={{marginTop: "-30px"}}>
                                 <input 
                                 id="icon_mode_edit" 
